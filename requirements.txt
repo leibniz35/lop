@@ -1,1 +1,4 @@
 sklearn
+pandas
+pillow
+streamlit
