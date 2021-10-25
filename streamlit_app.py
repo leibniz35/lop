@@ -24,7 +24,7 @@ st.write("""
 
 #Getting the Data
 
-df = pd.read_csv('/stroketrain.csv')
+df = pd.read_csv('stroketrain.csv')
 
 #setting a subheader
 st.subheader('Data Information: ')
