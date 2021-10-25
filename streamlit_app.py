@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
+from urllib.request import urlretrieve
 
 
 url = (("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroketrain.csv?raw=1"))
