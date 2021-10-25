@@ -9,6 +9,14 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
 
+
+url = (("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroketrain.csv?raw=1"))
+filename = "stroketrain.csv"
+urlretrieve(url,filename)
+
+
+
+
 st.write("""
 #Stroke Detection
 """)
