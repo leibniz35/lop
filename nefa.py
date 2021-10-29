@@ -17,12 +17,12 @@ from urllib.request import urlretrieve
 st.write("""
 #Stroke Detection
 """)
-url = ("http://dl.dropboxusercontent.com/s/ltr38gs69bga5ie/stroke.csv?raw=1")
-filename = "stroketrain.csv"
+url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainnnn.csv?raw=1")
+filename = "stroketrainnnn.csv"
 urlretrieve(url,filename)
 #Getting the Data
 
-df = pd.read_csv('stroketrain.csv')
+df = pd.read_csv('stroketrainnnn.csv')
 
 st.dataframe(df)
 #remove the rows with missing values
