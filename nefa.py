@@ -30,6 +30,7 @@ st.image(filenamee)
 
 df = pd.read_csv('stroketrainbest.csv')
 
+st.write("DATA")
 st.dataframe(df)
 #remove the rows with missing values
 df = df.drop(['id'], axis=1)
