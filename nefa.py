@@ -80,7 +80,7 @@ def get_user_input():
     avg_glucose_level = st.sidebar.slider('Average Glucose level', 0, 250, 0)
     bmi = st.sidebar.slider('BMI', 0.0, 80.0, 0.0)
     list6 = ['0', '1', '2', '3']
-    st.sidebar.write("0 = Unknown, 1 = formerly smokes, 2 = Never ,3 = Smokes")
+    st.sidebar.write("0 = Unknown, 1 = formerly smokes, 2 = Never, 3 = Smokes")
     smoking_status = st.sidebar.selectbox('Smoking Status', list6)
 
     #store a dictionary into a variable
