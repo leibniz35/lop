@@ -34,13 +34,6 @@ df = df.dropna( subset= ['bmi'])
 df = df.drop(['id'], axis=1)
 
 from sklearn.preprocessing import LabelEncoder
-labelencoder = LabelEncoder()
-
-df.iloc[:,0] = labelencoder.fit_transform(df.iloc[:,0].values)
-df.iloc[:,4] = labelencoder.fit_transform(df.iloc[:,4].values)
-df.iloc[:,5] = labelencoder.fit_transform(df.iloc[:,5].values)
-df.iloc[:,6] = labelencoder.fit_transform(df.iloc[:,6].values)
-df.iloc[:,9] = labelencoder.fit_transform(df.iloc[:,9].values)
 
 
 #setting a subheader
