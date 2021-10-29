@@ -60,6 +60,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.20 , rando
 #Getting input from the user
 def get_user_input():
     list1 = ['0', '1', '2']
+    st.sidebar.write("0 = Female, 1 = Male, 2 = Other")
     gender = st.sidebar.selectbox('Gender', list1)
     age = st.sidebar.slider('age', 0, 100, 0)
     list2 = ['0', '1']
@@ -68,14 +69,18 @@ def get_user_input():
     st.sidebar.write('If you have heart disease select 1, if you do not have heart disease select 0')
     heart_disease = st.sidebar.selectbox('Heart Disease', list2)
     list3 = ['0', '1']
+    st.sidebar.write("1 = Yes, 0 = No")
     ever_married = st.sidebar.selectbox('Ever Married', list3)
     list4 = ['0', '1', '2', '3', '4']
+    st.sidebar.write("0 = govt_job, 1 = Never Work, 2 = Private, 3 = self employed, 4 = child")                
     work_type = st.sidebar.selectbox('Work Type', list4)
     list5 = ['0', '1']
+    st.sidebar.write("0 = Rural, 1 = urban")
     Residence_type = st.sidebar.selectbox('Residence Type', list5)
     avg_glucose_level = st.sidebar.slider('Average Glucose level', 0, 250, 0)
     bmi = st.sidebar.slider('BMI', 0.0, 80.0, 0.0)
     list6 = ['0', '1', '2', '3']
+    st.sidebar.write("0 = Unknown, 1 = formerly smokes, 2 = Never ,3 = Smokes")
     smoking_status = st.sidebar.selectbox('Smoking Status', list6)
 
     #store a dictionary into a variable
