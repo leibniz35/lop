@@ -14,8 +14,7 @@ import streamlit as st
 
 from urllib.request import urlretrieve
 
-url = ("http://dl.dropboxusercontent.com/s/4968s0q14ytoby7/stroke.csv?raw=1")
-
+url = ("http://dl.dropboxusercontent.com/s/8nej4u6ivbimv1i/stroke.csv?raw=1")
 filename = "stroketrain.csv"
 urlretrieve(url,filename)
 
