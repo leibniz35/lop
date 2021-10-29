@@ -28,18 +28,18 @@ st.write("""
 #Getting the Data
 
 df = pd.read_csv("stroketrain.csv")
-df_data = pd.DataFrame(data)
+
 st.dataframe(df)
 #remove the rows with missing values
 df = df.drop(['id'], axis=1)
 
-df_data = df_data.fillna(df_data['bmi'].median())
+df = df.fillna(df['bmi'].median())
 
-for i in range(df_data.shape[1]):
-    if df_data.iloc[:,i].dtypes == object:
+for i in range(df.shape[1]):
+    if df.iloc[:,i].dtypes == object:
         lbl = LabelEncoder()
-        lbl.fit(list(df_data.iloc[:,i].values))
-        df_data.iloc[:,i] = lbl.transform(list(df_data.iloc[:,i].values))
+        lbl.fit(list(df.iloc[:,i].values))
+        df.iloc[:,i] = lbl.transform(list(df.iloc[:,i].values))
 
 #setting a subheader
 st.subheader('Data Information: ')
