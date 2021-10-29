@@ -27,17 +27,17 @@ df = pd.read_csv('stroketrain.csv')
 
 st.dataframe(df)
 #remove the rows with missing values
-df = df.dropna( subset= ['bmi'])
 df = df.drop(['id'], axis=1)
 
+df = df.fillna(df['bmi'].median())
 from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
 
-df.iloc[:,0] = labelencoder.fit_transform(df.iloc[:,0].values)
-df.iloc[:,4] = labelencoder.fit_transform(df.iloc[:,4].values)
-df.iloc[:,5] = labelencoder.fit_transform(df.iloc[:,5].values)
-df.iloc[:,6] = labelencoder.fit_transform(df.iloc[:,6].values)
-df.iloc[:,9] = labelencoder.fit_transform(df.iloc[:,9].values)
+for i in range(df.shape[1]):
+    if df.iloc[:,i].dtypes == object:
+        lbl = LabelEncoder()
+        lbl.fit(list(df.iloc[:,i].values))
+        df.iloc[:,i] = lbl.transform(list(df.iloc[:,i].values))
 
 
 #setting a subheader
