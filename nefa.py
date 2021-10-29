@@ -121,8 +121,8 @@ prediction = RandomForestClassifier.predict(user_input)
 #Setting a subheader and displaying the detection
 st.subheader('Detection: ')
 if prediction == 1:
-    st.write("Stroke"+'%'str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
+    st.write("Stroke"+'%'+str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
 else:
-    st.write("Not stroke: "+'%'str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
+    st.write("Not stroke: "+'%'+str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
     
 #st.write(prediction)
