@@ -47,12 +47,12 @@ for i in range(df.shape[1]):
 
 
 #setting a subheader
-st.subheader('Data Information: ')
+#st.subheader('Data Information: ')
 #Show a data as a table
-st.dataframe(df)
+#st.dataframe(df)
 
 #show statistics on the table
-st.write(df.describe())
+#st.write(df.describe())
 
 #Splitting the data
 X = df.iloc[:, 0:10].values
