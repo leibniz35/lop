@@ -20,7 +20,15 @@ st.write("""
 url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainbest.csv?raw=1")
 filename = "stroketrainbest.csv"
 urlretrieve(url,filename)
-#Getting the Data
+
+urll = ("http://dl.dropboxusercontent.com/s/vi0uyf8lue58co8/bird-3027224_960_720.png?raw=1")
+filenamee = "bird-3027224_960_720.png"
+urlretrieve(urll,filenamee)
+st.image(filenamee)
+
+
+
+
 
 df = pd.read_csv('stroketrainbest.csv')
 
