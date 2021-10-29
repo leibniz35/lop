@@ -111,8 +111,8 @@ RandomForestClassifier = RandomForestClassifier()
 RandomForestClassifier.fit(X_train, Y_train)
 
 #Show the models metrics
-st.subheader('Model Test Accuracy Score: ')
-st.write(str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
+#st.subheader('Model Test Accuracy Score: ')
+#st.write(str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
 
 #Store the models predictions in a variable
 
@@ -121,8 +121,8 @@ prediction = RandomForestClassifier.predict(user_input)
 #Setting a subheader and displaying the detection
 st.subheader('Detection: ')
 if prediction == 1:
-    st.write("Stroke"+ str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
+    st.write("Stroke"+'%'str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
 else:
-    st.write("not stroke"+ str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
+    st.write("Not stroke: "+'%'str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100))
     
 #st.write(prediction)
