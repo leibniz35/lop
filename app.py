@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 
-
+path = Path()
 
 st.write("""
 #Stroke Detection
@@ -18,7 +18,7 @@ st.write("""
 
 #Getting the Data
 
-df = pd.read_csv('C:\Users\degir\Desktop\stroke.csv')
+df = pd.read_csv(path/"train.csv")
 
 #setting a subheader
 st.subheader('Data Information: ')
