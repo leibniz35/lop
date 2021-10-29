@@ -34,6 +34,8 @@ st.dataframe(df)
 df = df.drop(['id'], axis=1)
 
 df = df.fillna(df['bmi'].median())
+from sklearn.preprocessing import LabelEncoder
+labelencoder = LabelEncoder()
 
 for i in range(df.shape[1]):
     if df.iloc[:,i].dtypes == object:
