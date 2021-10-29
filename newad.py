@@ -12,20 +12,21 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
 
+from urllib.request import urlretrieve
 
-https://www.dropbox.com/s/ykgj9vnkoj6cef1/stroketrain.csv?dl=0
+url = ("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroke.csv?raw=1")
+filename = "train.csv"
+urlretrieve(url,filename)
+
 
 
 st.write("""
 #Stroke Detection
 """)
 
-image = Image.open('C:/Users/karac/PycharmProjects/pythonProject/bird-belted-kingfisher-common-kingfisher-halcyon-crested-kingfisher-png-favpng-cZuViWARWzEwmzwQHzuNt9GZm-removebg-preview.png')
-st.image(image, caption='Halcyon', use_column_width=True)
-
 #Getting the Data
 
-df = pd.read_csv('C:/Users/karac/PycharmProjects/pythonProject/healthcare-dataset-stroke-data.csv')
+df = pd.read_csv("stroke.csv")
 
 st.dataframe(df)
 #remove the rows with missing values
