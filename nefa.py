@@ -83,7 +83,7 @@ def get_user_input():
     list5 = ['0', '1']
     st.sidebar.write("0 = Rural, 1 = urban")
     Residence_type = st.sidebar.selectbox('Residence Type', list5)
-    avg_glucose_level = st.sidebar.slider('Average Glucose level', 0, 50000, 0)
+    avg_glucose_level = st.sidebar.slider('Average Glucose level', 0, 300, 0)
     bmi = st.sidebar.slider('BMI', 0.0, 80.0, 0.0)
     list6 = ['0', '1', '2', '3']
     st.sidebar.write("0 = Unknown, 1 = formerly smokes, 2 = Never, 3 = Smokes")
