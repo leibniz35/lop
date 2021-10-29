@@ -17,8 +17,8 @@ from urllib.request import urlretrieve
 st.write("""
 #Stroke Detection
 """)
-url = ("http://dl.dropboxusercontent.com/s/jxp068766a3v6z7/stroketrain5.csv?raw=1")
-filename = "stroketrain5.csv"
+url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainnnn.csv?raw=1")
+filename = "stroketrainnnn.csv"
 urlretrieve(url,filename)
 #Getting the Data
 
