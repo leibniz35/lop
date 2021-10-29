@@ -12,6 +12,10 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
 
+
+https://www.dropbox.com/s/ykgj9vnkoj6cef1/stroketrain.csv?dl=0
+
+
 st.write("""
 #Stroke Detection
 """)
