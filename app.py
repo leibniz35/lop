@@ -70,7 +70,6 @@ def get_user_input():
     list5 = ['0', '1']
     Residence_type = st.sidebar.selectbox('Residence Type', list5)
     avg_glucose_level = st.sidebar.slider('Average Glucose level', 0, 250, 0)
-    bmi = st.sidebar.slider('BMI', 0.0, 80.0, 0.0)
     list6 = ['0', '1', '2', '3']
     smoking_status = st.sidebar.selectbox('Smoking Status', list6)
 
@@ -83,7 +82,6 @@ def get_user_input():
                  'work_type': work_type,
                  'Residence_type': Residence_type,
                  'avg_glucose_level': avg_glucose_level,
-                 'bmi': bmi,
                  'smoking_status': smoking_status
 
     }
