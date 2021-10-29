@@ -8,7 +8,11 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
+from urllib.request import urlretrieve
 
+url = ("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroketrain.csv?raw=1")
+filename = "train.csv"
+urlretrieve(url,filename)
 
 
 
