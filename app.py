@@ -23,7 +23,7 @@ st.write("""
 
 #Getting the Data
 
-df = pd.read_csv(path/"train.csv")
+df = pd.read_csv("train.csv")
 
 #setting a subheader
 st.subheader('Data Information: ')
