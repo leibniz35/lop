@@ -12,6 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
 from urllib.request import urlretrieve
+from sklearn.ensemble import RandomForestClassifier as RFC
 
 
 st.write("""
