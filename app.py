@@ -15,7 +15,7 @@ import streamlit as st
 from urllib.request import urlretrieve
 
 url = ("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroke.csv?raw=1")
-filename = "train.csv"
+filename = "stroketrain.csv"
 urlretrieve(url,filename)
 
 
@@ -26,7 +26,7 @@ st.write("""
 
 #Getting the Data
 
-df = pd.read_csv("stroke.csv")
+df = pd.read_csv("stroketrain.csv")
 
 st.dataframe(df)
 #remove the rows with missing values
