@@ -29,9 +29,6 @@ st.write("""
 df = pd.read_csv("stroketrain.csv")
 
 st.dataframe(df)
-#remove the rows with missing values
-df = df.dropna( subset= ['bmi'])
-df = df.drop(['id'], axis=1)
 
 from sklearn.preprocessing import LabelEncoder
 
