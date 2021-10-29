@@ -14,9 +14,7 @@ import streamlit as st
 from urllib.request import urlretrieve
 
 
-st.write("""
-#Stroke Detection
-""")
+st.write('# STROKE DETECTION PLATFORM ')
 url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainbest.csv?raw=1")
 filename = "stroketrainbest.csv"
 urlretrieve(url,filename)
