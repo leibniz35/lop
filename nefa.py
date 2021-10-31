@@ -20,8 +20,8 @@ st.set_page_config(
 )
 
 st.write('# STROKE DETECTION PLATFORM ')
-url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainbest.csv?raw=1")
-filename = "stroketrainbest.csv"
+url = ("http://dl.dropboxusercontent.com/s/1exdv1lllf6wbwj/strokenew.csv?raw=1")
+filename = "strokenew.csv"
 urlretrieve(url,filename)
 
 urll = ("http://dl.dropboxusercontent.com/s/vi0uyf8lue58co8/bird-3027224_960_720.png?raw=1")
