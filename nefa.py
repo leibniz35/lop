@@ -135,6 +135,6 @@ else:
     st.write("Not stroke")
     
 
-st.write("Model Accuracy: ", + str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) *100)
+st.write("Model Accuracy: ", + str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) *100))
     
 #st.write(prediction)
