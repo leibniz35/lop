@@ -13,6 +13,7 @@ from PIL import Image
 import streamlit as st
 from urllib.request import urlretrieve
 
+st.set_page_config(layout="wide")
 
 st.write('# STROKE DETECTION PLATFORM ')
 url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainbest.csv?raw=1")
