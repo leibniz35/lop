@@ -118,8 +118,8 @@ RandomForestClassifier = RandomForestClassifier()
 RandomForestClassifier.fit(X_train, Y_train)
 
 #Show the models metrics
-#st.subheader('Model Test Accuracy Score: ')
-#st.write(str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
+st.subheader('Model Test Accuracy Score: ')
+st.write(str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) * 100)+'%')
 
 #Store the models predictions in a variable
 
@@ -135,6 +135,5 @@ else:
     st.write("Not stroke")
     
 
-st.write("Model Accuracy: ", + str(accuracy_score(Y_test, RandomForestClassifier.predict(X_test)) *100))
     
 #st.write(prediction)
