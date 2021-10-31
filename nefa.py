@@ -19,7 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-#st.write('# STROKE DETECTION PLATFORM ')
+st.write('# STROKE DETECTION PLATFORM ')
 url = ("http://dl.dropboxusercontent.com/s/a0nl8hu60t3q82j/stroketrainbest.csv?raw=1")
 filename = "stroketrainbest.csv"
 urlretrieve(url,filename)
