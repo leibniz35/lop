@@ -24,7 +24,7 @@ st.write('# STROKE DETECTION PLATFORM ')
 url = ("http://dl.dropboxusercontent.com/s/ykgj9vnkoj6cef1/stroketrain.csv?raw=1")#değişim yok
 #url = ("http://dl.dropboxusercontent.com/s/ltr38gs69bga5ie/stroketrainnn.csv?raw=1")#2000 e kadar
 
-filename = "strokenew.csv"
+filename = "stroketrain.csv"
 urlretrieve(url,filename)
 
 urll = ("http://dl.dropboxusercontent.com/s/vi0uyf8lue58co8/bird-3027224_960_720.png?raw=1")
@@ -36,7 +36,7 @@ st.image(filenamee)
 
 
 
-df = pd.read_csv('stroketrainbest.csv')
+df = pd.read_csv('stroketrain.csv')
 
 #st.write("DATA")
 #st.dataframe(df)
